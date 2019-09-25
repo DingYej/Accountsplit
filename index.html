@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,148 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>账号拆分后台</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./js/layui/css/layui.css">
 </head>
+
 <body>
-    
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="header-jz">
+            <div class="header-lz">
+                <img src="./images/logo.png" alt=""><img src="./images/zhgl.png" alt="">
+            </div>
+            <div class="header-dl">
+                <div><span>admin</span>&nbsp;您好,&nbsp;&nbsp;欢迎登录第二教育网账号管理后台</div>
+                <div class="header-btn">退出</div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 内容区开始 -->
+    <div class="Contentarea">
+        <div class="Contentarea-jz">
+            <!-- 左侧 -->
+            <div class="Contentarea-left">
+                <div class="Contentarea-lt active"><span class="iconfont">&#xe626;</span><span>学校账号管理</span></div>
+                <div class="Contentarea-lt"><span class="iconfont">&#xe626;</span><span>个人账号管理</span></div>
+            </div>
+            <!-- 右侧 -->
+            <div class="Contentarea-right">
+                <div class="Contentarea-cl div_show">
+                    <div class="Contentarea-cl-tit">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">开通时间:</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="date" id="date" lay-verify="date"
+                                            placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">到期时间:</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="date" id="dates" lay-verify="date"
+                                            placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Contentarea-cl">2222222</div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容区结束 -->
 </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/layui/layui.js"></script>
+<script>
+    $('.Contentarea-left .Contentarea-lt').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.Contentarea-right .Contentarea-cl').eq($(this).index()).addClass('div_show');
+        $('.Contentarea-right .Contentarea-cl').eq($(this).index()).siblings().removeClass('div_show');
+    })
+
+    layui.use(['form', 'laydate'], function () {
+        var form = layui.form
+            , laydate = layui.laydate;
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#dates'
+        });
+    });
+</script>
+
 </html>

@@ -51,3 +51,129 @@ font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans 
 font-size: 14px;
 color: #444;
 }
+/* 头部 */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(68, 198, 164);
+    overflow: hidden;
+    min-width: 1200px;
+}
+.header-jz{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
+.header-lz{
+    float: left;
+}
+.header-lz img:first-child{
+    margin-top: 5px;
+    float: left;
+}
+.header-lz img:last-child{
+   margin:14.5px 0 0 20px;
+   float: left;
+}
+.header-dl{
+    float: right;
+    overflow: hidden;
+}
+.header-dl>div{
+    float: left;
+    font-size:14px;
+    color:rgba(255, 255, 255, .9);
+}
+.header-btn{
+    width: 50px;
+    height: 24px;
+    border: 1px solid #fff;
+    line-height: 24px;
+    text-align: center;
+    margin: 12px 0 0 20px;
+    cursor:pointer;
+}
+/* 头部结束 */
+/* 内容区开始 */
+.Contentarea{
+    width: 100%;
+    overflow: hidden;
+    min-width: 1200px
+}
+.Contentarea-jz{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.Contentarea-left,.Contentarea-right{
+    float: left;
+}
+/* 左侧 */
+.Contentarea-left{
+    width: 200px;
+    overflow: hidden;
+}
+.Contentarea-lt{
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.Contentarea-lt span:first-child{
+    margin: 0 8px 0 25px;
+}
+.Contentarea-left .active{
+    background-color: #fff;
+    color: rgb(68, 198, 164);
+}
+/* 右侧 */
+.Contentarea-right{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 30px;
+}
+.Contentarea-cl{
+    display: none
+}
+.Contentarea-right .div_show{
+    display: block;
+}
+.Contentarea-cl-tit{
+    width: 900px;
+    padding: 30px 20px;
+    height: 90px;
+    background-color: rgb(248, 248, 248);
+}
+.layui-form .from-ite{
+    width: 225px;
+    float: left;
+    clear:none;
+}
+.from-ite .layui-input-block{
+    margin-left: 53px
+}
+.from-ite .layui-form-label{
+    text-align: left;
+    width: 65px;
+    padding: 9px 0;
+}
+.from-ite .layui-input{
+    width: 139px;
+}
+.from-ite .layui-form-select .layui-edge{
+    right: 29px;
+}
+.from-ite .layui-form-select dl{
+    left: 12px;
+    top: 37px;
+    min-width: 139px;
+}
+.Contentarea-cl .from-ite .layui-inline{
+    margin: 0;
+}
+.Contentarea-cl .from-ite .layui-input-inline{
+    width: 140px;
+}
+/* 内容区结束 */
