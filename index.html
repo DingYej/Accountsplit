@@ -31,8 +31,8 @@
         <div class="Contentarea-jz">
             <!-- 左侧 -->
             <div class="Contentarea-left">
-                <div class="Contentarea-lt active"><span class="iconfont">&#xe626;</span><span>学校账号管理</span></div>
-                <div class="Contentarea-lt"><span class="iconfont">&#xe626;</span><span>个人账号管理</span></div>
+                <div class="Contentarea-lt active"><span class="iconfont">&#xe63f;</span><span>学校账号管理</span></div>
+                <div class="Contentarea-lt"><span class="iconfont">&#xe63f;</span><span>个人账号管理</span></div>
             </div>
             <!-- 右侧 -->
             <div class="Contentarea-right">
@@ -104,6 +104,7 @@
                                     <div class="layui-input-inline">
                                         <input type="text" name="date" id="date" lay-verify="date"
                                             placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                        <i class="icon iconfont rili-1">&#xe616;</i>
                                     </div>
                                 </div>
                             </div>
@@ -113,19 +114,209 @@
                                     <div class="layui-input-inline">
                                         <input type="text" name="date" id="dates" lay-verify="date"
                                             placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                        <i class="icon iconfont rili-1">&#xe616;</i>
                                     </div>
                                 </div>
                             </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="from-ite-btn">查询</div>
+                            </div>
                         </form>
                     </div>
+                    <div class="Contentarea-cl-list">
+                        <table lay-filter="test" class="layui-hide" id="test"></table>
+                        <div id="newxz" class="list-btn-t"><i class="iconfont">&#xe641;</i>&nbsp;新增</div>
+                        <div data-type="getCheckLength" class="list-btn-x"><i class="iconfont">&#xe6ac;</i>&nbsp;删除</div>
+                    </div>
                 </div>
-                <div class="Contentarea-cl">2222222</div>
+                <div class="Contentarea-cl">
+                    <div class="Contentarea-cl-tit">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <label class="layui-form-label">具体内容:</label>
+                                <div class="layui-input-block">
+                                    <select name="city" lay-verify="required">
+                                        <option value=""></option>
+                                        <option value="0">北京</option>
+                                        <option value="1">上海</option>
+                                        <option value="2">广州</option>
+                                        <option value="3">深圳</option>
+                                        <option value="4">杭州</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">开通时间:</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="date" id="date1" lay-verify="date"
+                                            placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                        <i class="icon iconfont rili-1">&#xe616;</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">到期时间:</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="date" id="dates2" lay-verify="date"
+                                            placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                                        <i class="icon iconfont rili-1">&#xe616;</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item from-ite">
+                                <div class="from-ite-btn">查询</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="Contentarea-cl-list">
+                        <table lay-data="{id:'idTest'}" lay-filter="test" class="layui-hide" id="tests"></table>
+                        <div id="newxz" class="list-btn-t"><i class="iconfont">&#xe641;</i>&nbsp;新增</div>
+                        <div class="list-btn-x"><i class="iconfont">&#xe6ac;</i>&nbsp;删除</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- 内容区结束 -->
 </body>
+<div id="newcont">
+    <p class="newcont-tit">新增账号</p>
+    <div class="newcont-lis">
+        <div class="layui-form-item">
+            <label class="layui-form-label">学校名称:</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">学校性质:</label>
+                <div class="layui-input-block">
+                    <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0">公办</option>
+                        <option value="1">民办</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号:</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码:</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                    class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">开通时间:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" id="date2" lay-verify="date" placeholder="yyyy-MM-dd"
+                        autocomplete="off" class="layui-input">
+                    <i class="icon iconfont rili-3">&#xe616;</i>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">到期时间:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="date" id="dates3" lay-verify="date" placeholder="yyyy-MM-dd"
+                        autocomplete="off" class="layui-input">
+                    <i class="icon iconfont rili-3">&#xe616;</i>
+                </div>
+            </div>
+        </div>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">服务项目:</label>
+                <div class="layui-input-block">
+                    <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0">无极剑圣</option>
+                        <option value="1">德玛西亚</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="lkh">
+            <label class="layui-form-label security-gg">所在地区:</label>
+            <div data-toggle="distpicker">
+                <div class="form-group">
+                    <select class="form-control" id="province1"></select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="city1"></select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="district1"></select>
+                </div>
+            </div>
+        </div>
+        <div class="lkh-btn">提交</div>
+    </div>
+</div>
 <script src="./js/jquery.min.js"></script>
+
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
 <script src="./js/layui/layui.js"></script>
 <script>
     $('.Contentarea-left .Contentarea-lt').click(function () {
@@ -134,14 +325,10 @@
         $('.Contentarea-right .Contentarea-cl').eq($(this).index()).siblings().removeClass('div_show');
     })
 
-    layui.use(['form', 'laydate'], function () {
+    layui.use(['form', 'laydate', 'table'], function () {
         var form = layui.form
-            , laydate = layui.laydate;
-        //监听提交
-        form.on('submit(formDemo)', function (data) {
-            layer.msg(JSON.stringify(data.field));
-            return false;
-        });
+            , laydate = layui.laydate
+            , table = layui.table;
         //日期
         laydate.render({
             elem: '#date'
@@ -149,7 +336,227 @@
         laydate.render({
             elem: '#dates'
         });
+        laydate.render({
+            elem: '#date1'
+        });
+        laydate.render({
+            elem: '#dates2'
+        });
+        laydate.render({
+            elem: '#date2'
+        });
+        laydate.render({
+            elem: '#dates3'
+        });
+        table.render({
+            elem: '#test',
+            id:'idTest'
+            , cols: [[
+                { type: 'checkbox' }
+                , { field: 'id', width: 118, title: '账号' }
+                , { field: 'username', width: 128, title: '学校名称' }
+                , { field: 'sex', width: 92, title: '学校性质' }
+                , { field: 'city', width: 140, title: '开通服务项目' }
+                , { field: 'sign', width: 300, title: '开通时间' }
+                , { field: 'experience', width: 112, title: '到期时间', }
+                , { field: 'score', width: 200, title: '登录次数', }
+                , { field: 'classify', width: 200, title: '剩余次数' }
+                , { field: 'wealth', width: 200, title: '财富' }
+            ]]
+            , data: [{
+                "id": "10001"
+                , "username": "杜甫"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "116"
+                , "ip": "192.168.0.8"
+                , "logins": "108"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10002"
+                , "username": "李白"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "12"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10003"
+                , "username": "王勃"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "65"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10004"
+                , "username": "贤心"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "666"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }]
+            //,skin: 'line' //表格风格
+            , even: true
+            , page: true
+            //,page: true //是否显示分页
+            //,limits: [5, 7, 10]
+            //,limit: 5 //每页默认显示的数量
+
+        });
+        table.on('checkbox(test)', function (obj) {
+        });
+
+        var $ = layui.$, active = {
+            getCheckData: function () { //获取选中数据
+                var checkStatus = table.checkStatus('idTest')
+                    , data = checkStatus.data;
+                layer.alert(JSON.stringify(data));
+            }
+            , getCheckLength: function () { //获取选中数目
+                var checkStatus = table.checkStatus('idTest')
+                    , data = checkStatus.data;
+                    console.log(data)
+                layer.msg('选中了：' + data.length + ' 个');
+            }
+            , isAll: function () { //验证是否全选
+                var checkStatus = table.checkStatus('idTest');
+                layer.msg(checkStatus.isAll ? '全选' : '未全选')
+            }
+        };
+
+        $('.userTable .layui-btn').on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+        table.render({
+            elem: '#tests'
+            , cols: [[
+                { type: 'checkbox' }
+                , { field: 'id', width: 118, title: '账号' }
+                , { field: 'username', width: 128, title: '学校名称' }
+                , { field: 'sex', width: 92, title: '学校性质' }
+                , { field: 'city', width: 140, title: '开通服务项目' }
+                , { field: 'sign', width: 300, title: '开通时间' }
+                , { field: 'experience', width: 112, title: '到期时间', }
+                , { field: 'score', width: 200, title: '登录次数', }
+                , { field: 'classify', width: 200, title: '剩余次数' }
+                , { field: 'wealth', width: 200, title: '财富' }
+            ]]
+            , data: [{
+                "id": "10001"
+                , "username": "杜甫"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "116"
+                , "ip": "192.168.0.8"
+                , "logins": "108"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10002"
+                , "username": "李白"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "12"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+                , "LAY_CHECKED": true
+            }, {
+                "id": "10003"
+                , "username": "王勃"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "65"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10004"
+                , "username": "贤心"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "666"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10005"
+                , "username": "贤心"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "86"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10006"
+                , "username": "贤心"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "12"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }, {
+                "id": "10007"
+                , "username": "贤心"
+                , "email": "xianxin@layui.com"
+                , "sex": "男"
+                , "city": "浙江杭州"
+                , "sign": "人生恰似一场修行"
+                , "experience": "16"
+                , "ip": "192.168.0.8"
+                , "logins": "106"
+                , "joinTime": "2016-10-14"
+            }]
+            //,skin: 'line' //表格风格
+            , even: true
+            , page: true
+            //,page: true //是否显示分页
+            //,limits: [5, 7, 10]
+            //,limit: 5 //每页默认显示的数量
+
+        });
+        $("#newxz").click(function () {
+            layer.open({
+                type: 1,
+                closeBtn: 2,
+                area: ['800px', '600px'],
+                isOutAnim: true,
+                title: '在线调试',
+                content: $('#newcont') //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+            });
+        })
+        $(".lkh-btn").click(function () {
+            layer.closeAll();
+        })
     });
+
 </script>
 
 </html>

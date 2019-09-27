@@ -6,18 +6,74 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "6119215",
-      "name": "右-三角",
-      "font_class": "right-s",
-      "unicode": "e627",
-      "unicode_decimal": 58919
+      "icon_id": "538489",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e641",
+      "unicode_decimal": 58945
     },
     {
-      "icon_id": "6884483",
-      "name": "向右",
-      "font_class": "xiangyou",
-      "unicode": "e626",
-      "unicode_decimal": 58918
+      "icon_id": "551490",
+      "name": "日历",
+      "font_class": "kalendar",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "891275",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "975631",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "1056868",
+      "name": "删除",
+      "font_class": "shanchu1",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "1215754",
+      "name": "加 (1)",
+      "font_class": "jia1",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "1920285",
+      "name": "加",
+      "font_class": "jia2",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6204095",
+      "name": "日历 日期",
+      "font_class": "riliriqi",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6237077",
+      "name": "右",
+      "font_class": "tubiaozhizuo-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6629814",
+      "name": "右",
+      "font_class": "you-",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
     }
   ]
 }
